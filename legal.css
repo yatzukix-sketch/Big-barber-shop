@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* Big Barbershop – Impressum & Datenschutz (rechtliche Seiten) */
+
+.legal-page { overflow-wrap: break-word; display: flex; flex-direction: column; min-height: 100vh; background: var(--paper); color: #23241f; font-size: 16px; -webkit-font-smoothing: antialiased; }
+.legal-page img { display: block; max-width: 100%; }
+.legal-page a { color: inherit; }
+
+.legal-header { background: #1a1c19; color: #f2ede4; }
+.legal-header-inner { width: min(100%, 1080px); margin-inline: auto; min-height: 86px; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.legal-brand { display: inline-flex; align-items: center; }
+.legal-brand img { height: 46px; width: auto; }
+.legal-back { display: inline-flex; align-items: center; gap: 9px; color: #cfcabb; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.legal-back:hover { color: #f0e2cc; }
+.legal-back svg { transition: transform .2s; }
+.legal-back:hover svg { transform: translateX(-3px); }
+
+.legal-main { flex: 1; padding: 60px 32px 80px; }
+.legal-wrap { width: min(100%, 780px); margin-inline: auto; min-width: 0; }
+.legal-kicker { color: #6f5330; font-size: 10px; font-weight: 700; letter-spacing: .18em; }
+.legal-title { overflow-wrap: break-word; margin-top: 14px; font-family: var(--serif); font-size: clamp(38px, 6vw, 58px); font-weight: 400; letter-spacing: -.02em; line-height: 1.05; overflow-wrap: break-word; hyphens: auto; }
+.legal-intro { margin-top: 18px; color: #55564f; font-size: 16px; line-height: 1.75; }
+.legal-alert { margin-top: 32px; padding: 16px 20px; border-left: 3px solid #b58a4f; background: #f0e7d6; color: #4b4234; font-size: 13px; line-height: 1.65; }
+.legal-alert strong { color: #2f2a22; }
+.todo { padding: 1px 5px; border-radius: 2px; background: #f3d9a8; color: #4f3c18; font-weight: 600; }
+
+.legal-block { padding-top: 40px; }
+.legal-block h2 { margin-bottom: 14px; font-family: var(--serif); font-size: 25px; font-weight: 400; letter-spacing: -.01em; line-height: 1.25; overflow-wrap: break-word; hyphens: auto; }
+.legal-block p { color: #4c4d46; font-size: 15px; line-height: 1.8; overflow-wrap: break-word; }
+.legal-block p + p { margin-top: 14px; }
+.legal-org { color: #2c2d28; font-size: 15px; line-height: 1.8; }
+.legal-list { display: grid; gap: 0; margin: 20px 0 0; border-top: 1px solid #ddd5c6; }
+.legal-list > div { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid #ddd5c6; }
+.legal-list dt { color: #5f6058; font-size: 13px; }
+.legal-list dd { margin: 0; min-width: 0; color: #2c2d28; font-size: 15px; overflow-wrap: anywhere; word-break: break-word; }
+.legal-list a { text-decoration: underline; text-underline-offset: 3px; }
+.legal-list a:hover { color: #8a6b45; }
+.legal-block code { overflow-wrap: anywhere; padding: 1px 5px; border-radius: 3px; background: #eae3d5; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+.legal-block--tr { margin-top: 46px; padding: 26px 24px; border: 1px solid #ddd5c6; background: #f3efe5; }
+.legal-block--tr h2 { font-size: 21px; }
+.legal-block--tr p { color: #4c4d46; font-size: 14px; }
+.legal-note { color: #5f6058; font-family: var(--sans); font-size: 12px; font-weight: 400; }
+.legal-updated { margin-top: 44px; padding-top: 20px; border-top: 1px solid #ddd5c6; color: #5f6058; font-size: 12px; }
+
+.legal-footer { border-top: 1px solid #ddd5c6; background: #1a1c19; color: #b8b7ae; }
+.legal-footer-inner { width: min(100%, 1080px); margin-inline: auto; padding: 26px 32px; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; font-size: 12px; }
+.legal-footer nav { display: flex; flex-wrap: wrap; gap: 22px; }
+.legal-footer a { color: #cfcabb; }
+.legal-footer a:hover { color: #f0e2cc; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 620px) {
+  .legal-header-inner { min-height: 74px; padding: 12px 20px; }
+  .legal-brand img { height: 36px; }
+  .legal-back { font-size: 10px; }
+  .legal-main { padding: 42px 20px 60px; }
+  .legal-list > div { grid-template-columns: 1fr; gap: 3px; }
+  .legal-block { padding-top: 32px; }
+  .legal-block h2 { font-size: 22px; }
+  .legal-block p, .legal-org { font-size: 14px; }
+  .legal-footer-inner { padding: 22px 20px; }
+}

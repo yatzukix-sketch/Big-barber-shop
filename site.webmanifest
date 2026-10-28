@@ -1,0 +1,21 @@
+{
+  "name": "Big Barbershop – Lollar",
+  "short_name": "Big Barbershop",
+  "lang": "de",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#191b18",
+  "theme_color": "#171815",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
